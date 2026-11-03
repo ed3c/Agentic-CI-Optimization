@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-ci-optimization"
+version = "0.1.0"
+description = "Read-only, evidence-bound CI and verification-selection analysis"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+dependencies = []
+
+[project.scripts]
+aco = "agentic_ci_optimization.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
